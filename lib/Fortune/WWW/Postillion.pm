@@ -14,7 +14,7 @@ Fortune::WWW::Postillion - Get fortune cookies from http://www.der-postillion.co
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 

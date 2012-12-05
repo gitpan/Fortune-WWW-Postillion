@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-
+use 5.010;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -11,7 +11,9 @@ use ExtUtils::MakeMaker 6.30;
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Get fortune cookies from http://www.der-postillion.com!",
   "AUTHOR" => "Maik Hentsche <caldrin\@cpan.org>",
-  "BUILD_REQUIRES" => {},
+  "BUILD_REQUIRES" => {
+    "Test::More" => 0
+  },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
   },
@@ -21,8 +23,13 @@ my %WriteMakefileArgs = (
   ],
   "LICENSE" => "perl",
   "NAME" => "Fortune::WWW::Postillion",
-  "PREREQ_PM" => {},
-  "VERSION" => "0.001",
+  "PREREQ_PM" => {
+    "HTML::Parser" => 0,
+    "WWW::Mechanize" => 0,
+    "strict" => 0,
+    "warnings" => 0
+  },
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }
