@@ -24,12 +24,15 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Fortune::WWW::Postillion",
   "PREREQ_PM" => {
+    "Exporter::Tiny" => 0,
     "HTML::Parser" => 0,
+    "Mojo::UserAgent" => 0,
     "WWW::Mechanize" => 0,
+    "base" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => "t/*.t"
   }

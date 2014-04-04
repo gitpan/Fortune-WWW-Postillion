@@ -14,9 +14,12 @@ meta-spec:
   version: 1.4
 name: Fortune-WWW-Postillion
 requires:
+  Exporter::Tiny: 0
   HTML::Parser: 0
+  Mojo::UserAgent: 0
   WWW::Mechanize: 0
+  base: 0
   perl: 5.010
   strict: 0
   warnings: 0
-version: 0.002
+version: 0.004
